@@ -1,0 +1,243 @@
+@import "../../App.scss";
+
+
+.me {
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+    .contentContainer {
+        max-width: 1066px;
+        margin: auto;
+        height: 100%;
+
+        
+    }
+
+    
+
+    .textContainer {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        z-index: 0;
+        @include smallMobile {
+            gap: 10px;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            width: 49%;
+        }
+
+        @include largeMobile {
+            top: 20px;
+            left: 80px;
+            width: 47%;
+           
+        }
+
+        @include mediumtablets {
+            width: 47%;
+            left: 80px;
+        }
+        @include largetablets {
+            width: 40%;
+            left: 80px;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: rebeccapurple;
+            letter-spacing: 10px;
+
+            @include smallMobile {
+                font-size: 20px;
+                letter-spacing: normal;
+                color: rgb(196, 248, 6);
+            }
+
+            @include smalltablets {
+                font-size: 36px;
+                letter-spacing: normal;
+            }
+
+            @include mediumtablets {
+                font-size: 31px;
+                letter-spacing: 10px;
+            }
+        }
+        h1 {
+            font-size: 45px;
+
+            @include smallMobile {
+                font-size: 16px;
+            }
+
+            @include smalltablets {
+                font-size: 26px;
+            }
+
+            @include mediumtablets {
+                font-size: 36px;
+            }
+
+            span {
+                @include smallMobile {
+                    font-size: 16px;
+                    letter-spacing: normal;
+                    color: orangered;
+                }
+                @include smalltablets {
+                    font-size: 26px;
+                }
+
+                @include mediumtablets {
+                    font-size: 36px;
+                }
+            }
+        }
+
+        .Cbutton {
+            
+            button {
+                padding: 10px;
+                border: 1px solid white;
+                background-color: #fff;
+                border-radius: 10px;
+                font-family: Agbalumo, serif;
+                font-size: 14px;
+                font-weight: 300;
+                cursor: pointer;
+
+                @include smallMobile {
+                    padding: 8px;
+                    border-radius: 5px;
+                    background: transparent;
+                    color: rgb(231, 203, 206);
+                    z-index: 10000;
+                }
+                @include mediumtablets {
+                    padding: 12px;
+                    border-radius: 8px;
+                    font-size: 15px;
+                    z-index: 1;
+                }
+
+            }
+            .Ccbutton {
+                margin-left: 10px;
+                padding: 10px;
+                border: 1px solid white;
+                background-color: #fff;
+                border-radius: 10px;
+                font-family: Agbalumo, serif;
+                font-size: 14px;
+                font-weight: 300;
+                cursor: pointer;
+                z-index: 1;
+
+                @include smallMobile {
+                    padding: 8px;
+                    border-radius: 5px;
+                    background: transparent;
+                    color: rgb(231, 203, 206);
+                    z-index: 1;
+                    margin-left: 6px;
+                    margin-top: 8px;
+                    z-index: 1;
+                }
+
+                @include mediumtablets {
+                    padding: 12px;
+                    border-radius: 8px;
+                    font-size: 15px;
+                    margin-left: 10px;
+                    margin-top: 8px;
+                    z-index: 1;
+                }
+        }
+        }
+
+        
+    }
+
+    .slidingContainer {
+        position: absolute;
+        font-size: 50vh;
+        bottom: -80px;
+        white-space: nowrap;
+        color: #ffffff09;
+        font-weight: bold;
+        width: 76%;
+        z-index: -2;
+        @include mediumtablets {
+            z-index: -2;
+        }
+    }
+   
+    .imageContainer {
+        height: 100%;
+        position: absolute;
+        top: 45px;
+        right: 105px;
+
+        @include smallMobile {
+                right: -60px;
+                // top: -0px;
+                opacity: 0.5;
+            }
+
+            @include smalltablets {
+                // left: 230px;
+                right: 0px;
+                top: 55px;
+                opacity: 0.6;
+            }
+
+            @include mediumtablets {
+                position: absolute;
+                right: -100px;
+                top: -50px;
+            }
+
+            @include largetablets {
+                right: 100px;
+            }
+
+        img {
+            border-radius: 50%;
+
+            @include smalltablets {
+                border-radius: 30%;
+                bottom: 0;
+
+            }
+            @include mediumtablets {
+                border-radius: 55%;
+                // height: 500px;
+                z-index: 2;
+                position: absolute;
+                right: 120px;
+                top: 20%;
+                bottom: 0;
+
+            }
+
+            @include largetablets {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
+            }
+       
+        }
+    }
+    span {
+        color: orangered;
+    }
+}
