@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0c0c1d;
+    color: rgb(211, 211, 211);
+}
+
+
+section {
+    height: 100vh;
+    scroll-snap-type: center;
+    scroll-snap-align: start;
+    
+    
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@mixin smallMobile {
+    @media (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin largeMobile {
+    @media (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin smalltablets {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+
+@mixin mediumtablets {
+    @media (min-width: 801px) {
+        @content;
+    }
+}
+
+
+@mixin largetablets {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+
+@mixin desktops {
+    @media (min-width: 1281px) {
+        @content;
+    }
+}
+
