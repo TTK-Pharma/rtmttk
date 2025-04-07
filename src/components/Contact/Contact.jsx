@@ -112,7 +112,7 @@ const Contact = () => {
               Submit
             </button>
 
-            <h2 style={{ color: "red" }}>{error && "Some error"}</h2>
+            <h2 style={{ color: "red" }}>{error && "Some error {error} "}</h2>
             <h2 style={{ color: "green" }}>{success && "Success"}</h2>
           </motion.form>
         </div>
