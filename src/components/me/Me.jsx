@@ -2,7 +2,7 @@ import React from "react";
 import "./Me.scss";
 import me from "../../assets/rtmttk.png";
 import { motion } from "framer-motion";
-import resume from "../../ThiruKumaran.pdf";
+import resume from "../../THIRU KUMARAN T-resume.docx";
 import { Link } from "react-scroll";
 
 const Me = () => {
