@@ -239,6 +239,7 @@
         top: 45px;
         right: 105px;
 
+
         @include smallMobile {
             right: -60px;
             // top: -0px;
@@ -258,22 +259,21 @@
             top: -50px;
         }
 
-        @include largetablets {
-            //right: 100px;
-        }
+        @include largetablets {}
 
         img {
             border-radius: 10%;
             height: 500px;
             width: 500px;
 
+
             @include smallMobile {
                 border-radius: 10%;
                 height: 170px;
                 width: 160px;
                 position: absolute;
-                right: 70px;
-                top: 70px;
+                right: calc(100vw - 80vw);
+                top: calc(100vh - 80vh);
             }
 
             @include largeMobile {
@@ -281,8 +281,8 @@
                 height: 250px;
                 width: 190px;
                 position: absolute;
-                right: 80px;
-                top: 70px;
+                right: calc(100vw - 85vw);
+                top: calc(100vh - 80vh);
             }
 
             @include smalltablets {
@@ -290,8 +290,8 @@
                 bottom: 10px;
                 width: 250px;
                 height: 300px;
-                right: 40px;
-                top: 75px;
+                right: calc(100vw - 95vw);
+                top: calc(100vh - 80vh);
                 opacity: 0.8;
 
             }
@@ -301,22 +301,28 @@
                 height: 500px;
                 z-index: 1;
                 position: absolute;
-                right: 120px;
-                top: 35%;
+                right: calc(100vw - 85vw);
+                top: calc(100vh - 75vh);
                 width: 390px;
 
             }
 
             @include largetablets {
                 position: absolute;
-                right: 120px;
-                width: 600px;
-                height: 780px;
-                top: 20%;
-
+                width: 550px;
+                height: 680px;
+                top: calc(100vh - 75vh);
+                right: calc(100vw - 90vw);
 
             }
 
+            @include desktops {
+                position: absolute;
+                width: 600px;
+                height: 680px;
+                top: calc(100vh - 85%);
+                right: calc(100vw - 85vw);
+            }
         }
     }
 

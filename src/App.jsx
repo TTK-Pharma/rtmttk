@@ -4,6 +4,7 @@ import Me from './components/me/Me';
 import Navbar from './components/navbar/Navbar';
 import Portfolio from './components/portfolio/Portfolio';
 import Services from './components/services/Services';
+import About from './components/About/about';
 
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
       <section id="Services">
         <Services />
       </section>
-      <Portfolio/>
-      <Contact /> 
+      <Portfolio />
+      <Contact />
     </div>
   );
 }
