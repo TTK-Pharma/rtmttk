@@ -15,7 +15,7 @@ function App() {
         <Me />
       </section>
       <section id="Services">
-        <Services />
+        <About />
       </section>
       <Portfolio />
       <Contact />

@@ -46,12 +46,19 @@ a {
     }
 }
 
+
+
 @mixin smalltablets {
     @media (min-width: 600px) {
         @content;
     }
 }
 
+@mixin midLength {
+    @media (min-width: 750px) {
+        @content;
+    }
+}
 
 @mixin mediumtablets {
     @media (min-width: 801px) {
@@ -59,12 +66,24 @@ a {
     }
 }
 
+@mixin moreLength {
+    @media (min-width: 950px) {
+        @content;
+    }
+}
 
 @mixin largetablets {
     @media (min-width: 1025px) {
         @content;
     }
 }
+
+@mixin extraLength {
+    @media (min-width: 1180px) {
+        @content;
+    }
+}
+
 
 
 @mixin desktops {

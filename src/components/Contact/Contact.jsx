@@ -82,7 +82,7 @@ const Contact = () => {
           <h1>Let's build together</h1>
           <div className="item">
             <h2>Mail</h2>
-            <span>thiruraju05@gmail.com</span>
+            <span>thirukumarantrtm@gmail.com</span>
           </div>
         </motion.div>
         <div className="formContainer">

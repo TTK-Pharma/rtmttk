@@ -46,7 +46,7 @@ const Me = () => {
         >
           <motion.h2 variants={textVariants}>Thiru Kumaran</motion.h2>
           <motion.h1 variants={textVariants}>
-            Pharmacist and Bioinformatici<span>an</span>
+            Pharmacist and Develop<span>er</span>
           </motion.h1>
           <motion.div className="Cbutton" variants={textVariants}>
             <a href={resume} download="ThiruKumaran">

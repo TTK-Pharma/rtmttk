@@ -65,36 +65,40 @@ const About = () => {
                         I spend my time building, reading, and occasionally going down rabbit holes I didn't plan for. Some of them become projects. Some just make me better at asking questions.
                     </motion.p>
                 </motion.p>
-                <motion.img className='imge' src={image}
-                    initial={{
-                        x: "150px"
-                    }}
-                    whileInView={{
-                        x: "0px",
-                        transition: {
-                            duration: 1
-                        }
-                    }}
-                >
+                <motion.div className="imageContainer">
+                    <motion.img className='imge' src={image}
+                        initial={{
+                            x: "150px"
+                        }}
+                        whileInView={{
+                            x: "0px",
+                            transition: {
+                                duration: 1
+                            }
+                        }}
+                    >
 
-                </motion.img>
-                <motion.p className="p4"
-                    initial={{
-                        x: "100px"
-                    }}
-                    whileInView={{
-                        x: "0px",
-                        transition: {
-                            duration: 1
-                        }
-                    }}
-                >
-                    🎓 Tata Trusts Scholar · M.Pharm · CGPA 9.42
-                    <motion.p className="p5">
-                        JSS College of Pharmacy
-                    </motion.p>
+                    </motion.img>
+                    <motion.div className='ppp'>
+                        <motion.p className="p4"
+                            initial={{
+                                x: "100px"
+                            }}
+                            whileInView={{
+                                x: "0px",
+                                transition: {
+                                    duration: 1
+                                }
+                            }}
+                        >
+                            🎓 Tata Trusts Scholar · M.Pharm (Biotech) · CGPA 9.42
+                            <motion.p className="p5">
+                                JSS College of Pharmacy
+                            </motion.p>
 
-                </motion.p>
+                        </motion.p>
+                    </motion.div>
+                </motion.div>
             </motion.div>
         </motion.div >
     )
