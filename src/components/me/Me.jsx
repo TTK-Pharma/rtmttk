@@ -1,8 +1,8 @@
 import React from "react";
 import "./Me.scss";
-import me from "../../assets/rtmttk.png";
+import me from "../../assets/mee.jpeg";
 import { motion } from "framer-motion";
-import resume from "../../THIRU KUMARAN T-resume.docx";
+import resume from "../../assets/THIRUKUMARAN.pdf";
 import { Link } from "react-scroll";
 
 const Me = () => {
@@ -46,7 +46,7 @@ const Me = () => {
         >
           <motion.h2 variants={textVariants}>Thiru Kumaran</motion.h2>
           <motion.h1 variants={textVariants}>
-            Pharmacist and Web develop<span>er</span>
+            Pharmacist and Bioinformatici<span>an</span>
           </motion.h1>
           <motion.div className="Cbutton" variants={textVariants}>
             <a href={resume} download="ThiruKumaran">
@@ -63,7 +63,7 @@ const Me = () => {
               <motion.button variants={textVariants} className="Ccbutton">Contact me</motion.button>
             </Link>
           </motion.div>
-          
+
         </motion.div>
       </div>
       <motion.div
@@ -72,7 +72,7 @@ const Me = () => {
         initial="initial"
         animate="animate"
       >
-        Pharmacist Develop<span>er</span>
+        Bioinformatician |  Develop<span>er</span>
       </motion.div>
 
       <motion.div

@@ -65,7 +65,7 @@ const Contact = () => {
         },
         (error) => {
           setError(true);
-          console.log ("EmailJs error: "error)
+          console.log("EmailJs error: ", error);
         }
       );
   };
